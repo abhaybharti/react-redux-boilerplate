@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+   "env":{
+     "browser" : true,
+     "jest":true,
+     "node": true
+   },
+  "extends": "airbnb",
+  "rules": {
+    "arrow-parens":["error","as-needed"],
+    "comma-dangle":["error","never"],
+    "max-len":"off",
+    "indent":["error",2,{"SwitchCase":1}],
+    "object-curly-spacing":["error","always"],
+    "key-spacing":["error",{
+      "beforeColon":false,
+      "afterColon":true,
+      "mode":"strict"
+    }],
+    "space-infix-ops":"error",
+    "no-multi-spaces":"error",
+    "linebreak-style":["error", "windows"],
+    "eol-last":["error", "always"],
+"function-paren-newline":"off",
+
+
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": "off",
+    "no-multiple-empty-lines":["error", {"max":1, "maxEOF":1}],
+    "jsx-ally/no-static-element-interactions":"off",
+    "jsx-ally/label-has-for":"off",
+    "jsx-ally/click-events-have-key-events": "off",
+    "react/no-array-index-key":"off",
+    "jsx-ally/anchor-is-valid":["error",{"components":["Link"],
+      "specialLink":["to"]}],
+      "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error"
+  }
+}
